@@ -4,7 +4,7 @@
  * Time: 9:58 AM
  */
 
-const React = require('React')
+const React = require('react')
 
 const Home = () => {
   return <div>home</div>
