@@ -4,7 +4,7 @@
   "description": "forum ssr",
   "main": "index.js",
   "scripts": {
-    "start": "node ./src/index.js"
+    "start": "nodemon ./src/index.js"
   },
   "keywords": [
     "forum",
@@ -14,6 +14,8 @@
   "license": "MIT",
   "dependencies": {
     "express": "^4.16.4",
-    "react": "^16.7.0"
+    "react": "^16.7.0",
+    "webpack": "^4.28.3",
+    "webpack-cli": "^3.2.0"
   }
 }

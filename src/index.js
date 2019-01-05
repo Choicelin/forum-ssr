@@ -6,6 +6,7 @@
 
 const express = require('express')
 const app = express()
+const Home = require('./containers/Home/index')
 
 app.get('/', (req, res) => res.send(`
   <html>
