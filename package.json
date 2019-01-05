@@ -4,7 +4,7 @@
   "description": "forum ssr",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./src/index.js"
   },
   "keywords": [
     "forum",
@@ -13,6 +13,7 @@
   "author": "Choicelin",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "react": "^16.7.0"
   }
 }
