@@ -4,20 +4,14 @@
  * Time: 9:57 AM
  */
 
-const express = require('express')
-const app = express()
-const Home = require('./containers/Home/index')
+import express from 'express'
+import React from 'react'
+import { renderToString } from 'react-dom/server'
 
-app.get('/', (req, res) => res.send(`
-  <html>
-    <head>
-      <title>hello</title>
-    </head>
-    <body>
-      <h1>first ssr</h1>    
-      <p>hello ssr</p>
-    </body>
-  </html>
-`))
+import Home from './containers/Home/index'
+
+const app = express()
+
+app.get('/', (req, res) => res.send(renderToString(<Home />)))
 
 app.listen(3000, () => console.log('Example app listening on port 3000!'))

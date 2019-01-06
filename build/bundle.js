@@ -90,10 +90,11 @@
 /*!**************************************!*\
   !*** ./src/containers/Home/index.js ***!
   \**************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("/**\n * Creator: JIZHUA<413807584@qq.com>\n * Date: 2019/1/5\n * Time: 9:58 AM\n */\nvar React = __webpack_require__(/*! react */ \"react\");\n\nvar Home = function Home() {\n  return React.createElement(\"div\", null, \"home\");\n};\n\nmodule.exports = {\n  default: Home\n};\n\n//# sourceURL=webpack:///./src/containers/Home/index.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/**\n * Creator: JIZHUA<413807584@qq.com>\n * Date: 2019/1/5\n * Time: 9:58 AM\n */\n\n\nvar Home = function Home() {\n  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", null, \"home\");\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Home);\n\n//# sourceURL=webpack:///./src/containers/Home/index.js?");
 
 /***/ }),
 
@@ -101,10 +102,11 @@ eval("/**\n * Creator: JIZHUA<413807584@qq.com>\n * Date: 2019/1/5\n * Time: 9:5
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("/**\n * Creator: JIZHUA<413807584@qq.com>\n * Date: 2019/1/5\n * Time: 9:57 AM\n */\nvar express = __webpack_require__(/*! express */ \"express\");\n\nvar app = express();\n\nvar Home = __webpack_require__(/*! ./containers/Home/index */ \"./src/containers/Home/index.js\");\n\napp.get('/', function (req, res) {\n  return res.send(\"\\n  <html>\\n    <head>\\n      <title>hello</title>\\n    </head>\\n    <body>\\n      <h1>first ssr</h1>    \\n      <p>hello ssr</p>\\n    </body>\\n  </html>\\n\");\n});\napp.listen(3000, function () {\n  return console.log('Example app listening on port 3000!');\n});\n\n//# sourceURL=webpack:///./src/index.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var express__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! express */ \"express\");\n/* harmony import */ var express__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(express__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var react_dom_server__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-dom/server */ \"react-dom/server\");\n/* harmony import */ var react_dom_server__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_dom_server__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _containers_Home_index__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./containers/Home/index */ \"./src/containers/Home/index.js\");\n/**\n * Creator: JIZHUA<413807584@qq.com>\n * Date: 2019/1/5\n * Time: 9:57 AM\n */\n\n\n\n\nvar app = express__WEBPACK_IMPORTED_MODULE_0___default()();\napp.get('/', function (req, res) {\n  return res.send(Object(react_dom_server__WEBPACK_IMPORTED_MODULE_2__[\"renderToString\"])(react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_containers_Home_index__WEBPACK_IMPORTED_MODULE_3__[\"default\"], null)));\n});\napp.listen(3000, function () {\n  return console.log('Example app listening on port 3000!');\n});\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
@@ -127,6 +129,17 @@ eval("module.exports = require(\"express\");\n\n//# sourceURL=webpack:///externa
 /***/ (function(module, exports) {
 
 eval("module.exports = require(\"react\");\n\n//# sourceURL=webpack:///external_%22react%22?");
+
+/***/ }),
+
+/***/ "react-dom/server":
+/*!***********************************!*\
+  !*** external "react-dom/server" ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("module.exports = require(\"react-dom/server\");\n\n//# sourceURL=webpack:///external_%22react-dom/server%22?");
 
 /***/ })
 
