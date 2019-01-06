@@ -5,9 +5,18 @@
  */
 
 import React from 'react'
+import { connect } from 'react-redux'
+import Header from '../../components/Header'
 
-const Home = () => {
-  return <div>home!</div>
+const Home = (props) => {
+  return (<div>
+    <Header />
+    home! {props.name}
+  </div>)
 }
 
-export default Home
+const mapStateToProps = (state) => ({
+  name: state.name
+})
+
+export default connect(mapStateToProps, null)(Home)

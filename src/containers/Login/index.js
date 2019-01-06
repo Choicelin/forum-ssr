@@ -5,9 +5,10 @@
  */
 
 import React from 'react'
+import { connect } from "react-redux"
 
 const Login = () => {
   return <div>login!</div>
 }
 
-export default Login
+export default connect()(Login)
