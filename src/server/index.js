@@ -1,14 +1,14 @@
 /**
  * Creator: JIZHUA<413807584@qq.com>
- * Date: 2019/1/5
- * Time: 9:57 AM
+ * Date: 2019/1/6
+ * Time: 10:54 AM
  */
 
 import express from 'express'
 import React from 'react'
 import { renderToString } from 'react-dom/server'
 
-import Home from './containers/Home/index'
+import Home from '../containers/Home/index'
 
 const app = express()
 
