@@ -12,6 +12,19 @@ import Home from './containers/Home/index'
 
 const app = express()
 
-app.get('/', (req, res) => res.send(renderToString(<Home />)))
+const content = renderToString(<Home />)
+
+app.get('/', (req, res) => res.send(
+  `
+    <html>
+      <head>
+      <title>forum ssr</title>
+      </head>
+      <body>
+        ${content}
+      </body>
+    </html>
+  `
+))
 
 app.listen(3000, () => console.log('Example app listening on port 3000!'))
